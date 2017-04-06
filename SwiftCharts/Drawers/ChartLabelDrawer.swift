@@ -78,7 +78,7 @@ open class ChartLabelDrawer: ChartContextDrawer {
         return CGRect(x: screenLoc.x, y: screenLoc.y, width: size.width, height: size.height)
     }
     
-    init(label: ChartAxisLabel, screenLoc: CGPoint) {
+    public init(label: ChartAxisLabel, screenLoc: CGPoint) {
         self.label = label
         self.screenLoc = screenLoc
         
