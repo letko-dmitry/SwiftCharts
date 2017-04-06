@@ -61,9 +61,7 @@ public enum ChartLabelDrawerRotationKeep {
 open class ChartLabelDrawer: ChartContextDrawer {
     
     open var screenLoc: CGPoint
-    
-    fileprivate var transform: CGAffineTransform?
-    
+    open var transform: CGAffineTransform?    
     open let label: ChartAxisLabel
     
     open var center: CGPoint {
