@@ -82,9 +82,8 @@ open class ChartPointsLineLayer<T: ChartPoint>: ChartPointsLayer<T> {
     open let pathGenerator: ChartLinesViewPathGenerator
     open fileprivate(set) var screenLines: [(screenLine: ScreenLine<T>, view: ChartLinesView)] = []
     
-    fileprivate let useView: Bool
-    
-    fileprivate let delayInit: Bool
+    public let useView: Bool
+    public let delayInit: Bool
     
     fileprivate var isInTransform = false
     
