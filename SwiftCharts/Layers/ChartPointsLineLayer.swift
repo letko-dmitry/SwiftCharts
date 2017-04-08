@@ -13,7 +13,7 @@ public enum LineJoin {
     case round
     case bevel
     
-    var CALayerString: String {
+    public var CALayerString: String {
         switch self {
         case .miter: return kCALineJoinMiter
         case .round: return kCALineCapRound
@@ -21,7 +21,7 @@ public enum LineJoin {
         }
     }
     
-    var CGValue: CGLineJoin {
+    public var CGValue: CGLineJoin {
         switch self {
         case .miter: return .miter
         case .round: return .round
