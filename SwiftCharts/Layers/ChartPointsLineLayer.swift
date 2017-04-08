@@ -35,7 +35,7 @@ public enum LineCap {
     case round
     case square
     
-    var CALayerString: String {
+    public var CALayerString: String {
         switch self {
         case .butt: return kCALineCapButt
         case .round: return kCALineCapRound
@@ -43,7 +43,7 @@ public enum LineCap {
         }
     }
     
-    var CGValue: CGLineCap {
+    public var CGValue: CGLineCap {
         switch self {
         case .butt: return .butt
         case .round: return .round
