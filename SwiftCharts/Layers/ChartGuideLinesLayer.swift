@@ -19,8 +19,8 @@ open class ChartGuideLinesLayerSettings {
 }
 
 open class ChartGuideLinesDottedLayerSettings: ChartGuideLinesLayerSettings {
-    let dotWidth: CGFloat
-    let dotSpacing: CGFloat
+    public let dotWidth: CGFloat
+    public let dotSpacing: CGFloat
     
     public init(linesColor: UIColor, linesWidth: CGFloat, dotWidth: CGFloat = 2, dotSpacing: CGFloat = 2) {
         self.dotWidth = dotWidth
